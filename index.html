@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>3D Produktkonfigurator mit THREE.js</title>
+</head>
+<body>
+<div class="container-fluid mt-3">
+    <div class="row">
+        <div class="col-md-8">
+            <canvas id="canvas">
+
+            </canvas>
+        </div>
+        <div class="col-md-4">
+            <h4>3er BMW Konfigurieren</h4>
+            <p>Lease heute noch deinen eigenen 3er BMW!</p>
+            <p>Hier kannst du die Farbe der einzelnen Komponenten einstellen und die Reifengrösse.</p>
+            <label class="d-flex mb-3">
+                <input type="color" class="change-car-color me-3" data-car-selector="Shell" value="#21447d">
+                <span >Gehäuse</span>
+            </label>
+            <label class="d-flex mb-3">
+                <input type="color" class="change-car-color me-3" data-car-selector="Tire" value="#111111">
+                <span>Reifen</span>
+            </label>
+            <div class="mb-3">
+                <label for="tireSize" class="form-label">Reifengrösse</label>
+                <input type="range" class="form-range change-tire-size" id="tireSize">
+            </div>
+            <label class="d-flex mb-3">
+                <input type="color" class="change-car-color me-3" data-car-selector="Window" value="#222222">
+                <span>Fenster</span>
+            </label>
+
+            <div class="form-check form-switch mb-3">
+                <input class="form-check-input optional-car-input" type="checkbox" role="switch" id="windowOptionalSwitch" data-car-selector="Window">
+                <label class="form-check-label" for="windowOptionalSwitch">Fenster ausblenden</label>
+            </div>
+
+            <label class="d-flex mb-3">
+                <input type="color" class="change-car-color me-3" data-car-selector="Interior" value="#110011">
+                <span>Innenausstattung</span>
+            </label>
+
+            <button class="btn btn-primary">Jetzt leasen!</button>
+        </div>
+    </div>
+</div>
+
+<script src="src/main.js" type="module"></script>
+</body>
+</html>
