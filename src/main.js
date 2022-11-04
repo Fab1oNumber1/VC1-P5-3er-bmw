@@ -97,7 +97,7 @@ function setMaterial(parent, type, mtl) {
     });
 }
 
-loader.load('/bmw.glb', function(gltf) {
+loader.load('./bmw.glb', function(gltf) {
     carModel = gltf.scene;
 
     carModel.traverse((o) => {
